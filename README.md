@@ -1,16 +1,92 @@
-# React + Vite
+# Frontend React - Proyecto Profesional
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación React moderna con estructura profesional, sistema de rutas, componentes reutilizables y más.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19** - Última versión de React
+- **React Router DOM** - Sistema de navegación completo
+- **Vite** - Build tool ultrarrápido
+- **Tailwind CSS** - Estilos utility-first
+- **Axios** - Cliente HTTP configurado
+- **ESLint** - Linting y calidad de código
 
-## React Compiler
+## Estructura del Proyecto
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+```
+src/
+├── components/       # Componentes reutilizables (Card, Button, Input, Alert)
+├── layouts/          # MainLayout con navegación
+├── pages/            # Vistas (Home, Dashboard, About)
+├── routes/           # Configuración de rutas
+├── services/         # API y servicios
+├── hooks/            # Custom hooks (useFetch, useLocalStorage)
+├── utils/            # Utilidades (formatters, validators)
+└── constants/        # Configuración global
+```
 
-## Expanding the ESLint configuration
+## Inicio Rápido
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Instalar dependencias
+npm install
+
+# Iniciar servidor de desarrollo
+npm run dev
+
+# Construir para producción
+npm run build
+```
+
+## Documentación
+
+- **[GUIA_INICIO.md](./GUIA_INICIO.md)** - Guía completa de inicio
+- **[PROJECT_STRUCTURE.md](./PROJECT_STRUCTURE.md)** - Estructura detallada
+- **[EJEMPLOS.md](./EJEMPLOS.md)** - Ejemplos de código
+- **[ESTRUCTURA_VISUAL.txt](./ESTRUCTURA_VISUAL.txt)** - Vista visual de la estructura
+- **[PLANTILLA_PAGINA.jsx](./PLANTILLA_PAGINA.jsx)** - Plantilla para nuevas páginas
+
+## Páginas Incluidas
+
+- **/** - Página de inicio con test de conexión al backend
+- **/dashboard** - Panel de control con estadísticas
+- **/about** - Información sobre el proyecto
+
+## Componentes UI Disponibles
+
+- `Card` - Tarjetas contenedoras
+- `Button` - Botones con variantes (primary, secondary, outline, danger)
+- `Input` - Campos de entrada con validación
+- `Alert` - Alertas y notificaciones
+- `Loading` - Spinner de carga
+
+## Custom Hooks
+
+- `useFetch` - Peticiones HTTP simplificadas
+- `useLocalStorage` - Persistencia en localStorage
+
+## Scripts Disponibles
+
+```bash
+npm run dev       # Servidor de desarrollo
+npm run build     # Build de producción
+npm run preview   # Vista previa del build
+npm run lint      # Ejecutar linter
+```
+
+## Crear Nueva Página
+
+1. Crea el archivo en `src/pages/MiPagina.jsx`
+2. Agrega la ruta en `src/routes/index.jsx`
+3. Actualiza el menú en `src/layouts/MainLayout.jsx`
+
+Ver [GUIA_INICIO.md](./GUIA_INICIO.md) para más detalles.
+
+## Tecnologías
+
+- React 19
+- React Router DOM 7
+- Vite 7
+- Tailwind CSS 4
+- Axios 1.13
+- ESLint 9

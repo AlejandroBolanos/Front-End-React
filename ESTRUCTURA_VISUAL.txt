@@ -1,0 +1,139 @@
+================================================================================
+   ESTRUCTURA DEL PROYECTO REACT - FRONTEND
+================================================================================
+
+frontend-react/
+│
+├── 📁 public/                      # Archivos públicos estáticos
+│   └── vite.svg
+│
+├── 📁 src/                         # Código fuente de la aplicación
+│   │
+│   ├── 📁 components/              # Componentes reutilizables
+│   │   ├── 📁 common/             # Componentes compartidos
+│   │   │   └── Loading.jsx        ✨ Spinner de carga
+│   │   │
+│   │   └── 📁 ui/                 # Componentes de interfaz
+│   │       ├── Card.jsx           ✨ Tarjetas contenedoras
+│   │       ├── Button.jsx         ✨ Botones con variantes
+│   │       ├── Input.jsx          ✨ Campos de entrada
+│   │       ├── Alert.jsx          ✨ Alertas y notificaciones
+│   │       └── index.js           📦 Exportación centralizada
+│   │
+│   ├── 📁 layouts/                 # Layouts de la aplicación
+│   │   └── MainLayout.jsx         🎨 Layout con menú y footer
+│   │
+│   ├── 📁 pages/                   # Páginas/Vistas
+│   │   ├── Home.jsx               🏠 Página de inicio
+│   │   ├── Dashboard.jsx          📊 Panel de control
+│   │   └── About.jsx              ℹ️  Información del proyecto
+│   │
+│   ├── 📁 routes/                  # Sistema de rutas
+│   │   └── index.jsx              🧭 Configuración React Router
+│   │
+│   ├── 📁 services/                # Servicios y APIs
+│   │   └── api.js                 🌐 Cliente Axios configurado
+│   │
+│   ├── 📁 hooks/                   # Custom React Hooks
+│   │   ├── useFetch.js            🪝 Hook para peticiones HTTP
+│   │   └── useLocalStorage.js     🪝 Hook para localStorage
+│   │
+│   ├── 📁 utils/                   # Funciones utilitarias
+│   │   ├── formatters.js          🛠️  Formateo de datos
+│   │   └── validators.js          ✅ Validaciones
+│   │
+│   ├── 📁 constants/               # Constantes globales
+│   │   └── config.js              ⚙️  Configuración
+│   │
+│   ├── 📁 assets/                  # Recursos estáticos
+│   │   └── react.svg
+│   │
+│   ├── App.jsx                     🚀 Componente raíz
+│   ├── main.jsx                    🎯 Punto de entrada
+│   ├── index.css                   🎨 Estilos globales
+│   └── App.css
+│
+├── 📄 Archivos de configuración
+│   ├── package.json                📦 Dependencias y scripts
+│   ├── vite.config.js             ⚡ Configuración de Vite
+│   ├── tailwind.config.js         🎨 Configuración Tailwind
+│   ├── postcss.config.js          🔧 Configuración PostCSS
+│   ├── eslint.config.js           📏 Configuración ESLint
+│   └── index.html                 📄 HTML principal
+│
+└── 📚 Documentación
+    ├── README.md                   📖 Readme del proyecto
+    ├── GUIA_INICIO.md             🚀 Guía de inicio rápido
+    ├── PROJECT_STRUCTURE.md       📋 Estructura detallada
+    ├── EJEMPLOS.md                💡 Ejemplos de código
+    └── ESTRUCTURA_VISUAL.txt      🗂️  Este archivo
+
+================================================================================
+   RUTAS DISPONIBLES
+================================================================================
+
+  /                    →  Home        (Página de inicio)
+  /dashboard           →  Dashboard   (Panel de control)
+  /about              →  About       (Acerca de)
+
+================================================================================
+   COMPONENTES UI DISPONIBLES
+================================================================================
+
+  ✨ Card              →  Tarjetas contenedoras con estilos
+  ✨ Button            →  Botones (primary, secondary, outline, danger)
+  ✨ Input             →  Campos de entrada con validación
+  ✨ Alert             →  Alertas (success, error, warning, info)
+  ✨ Loading           →  Spinner de carga
+
+================================================================================
+   CUSTOM HOOKS DISPONIBLES
+================================================================================
+
+  🪝 useFetch          →  Peticiones HTTP simplificadas
+  🪝 useLocalStorage   →  Persistencia en localStorage
+
+================================================================================
+   UTILIDADES DISPONIBLES
+================================================================================
+
+  🛠️  formatCurrency    →  Formatear monedas
+  🛠️  formatDate        →  Formatear fechas
+  🛠️  truncateText      →  Truncar textos
+
+  ✅ isValidEmail      →  Validar emails
+  ✅ isRequired        →  Validar campos requeridos
+  ✅ hasMinLength      →  Validar longitud mínima
+  ✅ isNumber          →  Validar números
+
+================================================================================
+   SCRIPTS NPM
+================================================================================
+
+  npm run dev          ⚡ Iniciar servidor de desarrollo
+  npm run build        📦 Construir para producción
+  npm run preview      👀 Vista previa del build
+  npm run lint         📏 Ejecutar linter
+
+================================================================================
+   TECNOLOGÍAS INCLUIDAS
+================================================================================
+
+  ⚛️  React 19                Librería de UI
+  🧭 React Router DOM        Sistema de rutas
+  ⚡ Vite                    Build tool y dev server
+  🎨 Tailwind CSS            Framework CSS utility-first
+  🌐 Axios                   Cliente HTTP
+  📏 ESLint                  Linting y calidad de código
+
+================================================================================
+   PRÓXIMOS PASOS SUGERIDOS
+================================================================================
+
+  1. Ejecutar: npm run dev
+  2. Abrir: http://localhost:5174
+  3. Explorar las páginas usando el menú
+  4. Revisar GUIA_INICIO.md para más información
+  5. Ver EJEMPLOS.md para código de ejemplo
+
+================================================================================
